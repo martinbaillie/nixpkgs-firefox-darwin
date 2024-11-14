@@ -15,22 +15,6 @@ function generate_json_librewolf(){
 		'{version: $version, url: $url, sha256: $sha256}'
 }
 
-function generate_json_floorp(){
-    base_json_floorp="$(curl -s https://api.github.com/repos/Floorp-Projects/Floorp/releases/latest)"
-    url="$(echo $base_json_floorp | jq -r '.assets[].browser_download_url' | grep .floorp-macOS-*)"
-
-    temp_file="/tmp/floorp-macOS-universal.dmg"
-    curl -Ls -o $temp_file $url
-
-    sha256="$(shasum -a 256 $temp_file | awk '{print $1}')"
-
-    jq -n \
-        --arg version "$(echo $base_json_floorp | jq -r '.tag_name')" \
-        --arg url $url \
-        --arg sha256 "$sha256" \
-        '{version: $version, url: $url, sha256: $sha256}'
-}
-
 function get_version() {
 	curl -s "https://product-details.mozilla.org/1.0/firefox_versions.json" |
 		case $1 in
@@ -58,32 +42,32 @@ function get_path() {
 		echo "devedition/releases/$(get_version "$1")"
 		;;
 	firefox-nightly)
-		date=$(curl -s "$base_url/firefox/nightly/latest-mozilla-central/firefox-$(get_version "$1").en-US.mac.buildhub.json" | jq -r ".build.date") 
+		date=$(curl -s "$base_url/firefox/nightly/latest-mozilla-central-l10n/firefox-$(get_version "$1").en-US.mac.buildhub.json" | jq -r ".build.date")
 
 		year=$(date -u -d $date +"%Y")
 		month=$(date -u -d $date +"%m")
 		formatted_date=$(date -u -d $date +"%Y-%m-%d-%H-%M-%S")
 
-		echo "firefox/nightly/$year/$month/$formatted_date-mozilla-central"
+		echo "firefox/nightly/$year/$month/$formatted_date-mozilla-central-l10n"
 		;;
 	esac
 }
 
 function get_url() {
 	if [ "$1" != "firefox-nightly" ]; then
-		echo "$base_url/$(get_path "$1")/mac/en-US/Firefox%20$(get_version "$1").dmg"
+		echo "$base_url/$(get_path "$1")/mac/sco/Firefox%20$(get_version "$1").dmg"
 	else
-		echo "$base_url/$(get_path "$1")/firefox-$(get_version "$1").en-US.mac.dmg"
+		echo "$base_url/$(get_path "$1")/firefox-$(get_version "$1").sco.mac.dmg"
 	fi
 }
 
 function get_sha256() {
 	if [ "$1" != "firefox-nightly" ]; then
 	curl -s "$base_url/$(get_path "$1")/SHA256SUMS" |
-		grep "mac/en-US/Firefox $(get_version "$1").dmg" |
+		grep "mac/sco/Firefox $(get_version "$1").dmg" |
 		awk '{print $1}'
 	else
-		curl -s "$base_url/$(get_path "$1")/firefox-$(get_version "$1").en-US.mac.checksums" |
+		curl -s "$base_url/$(get_path "$1")/firefox-$(get_version "$1").sco.mac.checksums" |
 		grep "sha256.*\.dmg" |
 		awk '{print $1}'
 	fi
@@ -107,8 +91,7 @@ json=$(
 		"firefox-esr": $(generate_json "firefox-esr"),
 		"firefox-nightly": $(generate_json "firefox-nightly"),
 		"librewolf-arm64": $(generate_json_librewolf "arm64"),
-		"librewolf-x86_64": $(generate_json_librewolf "x86_64"),
-		"floorp-x86_64": $(generate_json_floorp "x86_64")
+		"librewolf-x86_64": $(generate_json_librewolf "x86_64")
     }
 EOF
 )

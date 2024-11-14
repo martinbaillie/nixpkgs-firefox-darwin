@@ -1,4 +1,6 @@
-{ pkgs ? import <nixpkgs> { overlays = [ (import ./overlay.nix) ]; } }:
+{
+  pkgs ? import <nixpkgs> { overlays = [ (import ./overlay.nix) ]; },
+}:
 pkgs.mkShell {
   packages = with pkgs; [
     firefox-bin
@@ -7,6 +9,5 @@ pkgs.mkShell {
     firefox-esr-bin
     firefox-nightly-bin
     librewolf
-    floorp-bin
   ];
 }
