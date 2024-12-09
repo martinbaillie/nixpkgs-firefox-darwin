@@ -1,9 +1,12 @@
 ---
 name: "Check evaluation"
+# on:
+#   push:
+#     branches:
+#       - '**'
 on:
-  push:
-    branches:
-      - '**'
+  schedule:
+    - cron: "30 0 * * *"
   workflow_run:
     workflows: ["Update sources"]
     types:
