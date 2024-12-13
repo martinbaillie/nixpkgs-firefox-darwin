@@ -15,14 +15,14 @@
     "sha256": "0fb8d1d45e0d26a4ab5fdcdae81dedc7d8f95b02ecec89a4ed5b5c4427b012e2"
   },
   "firefox-esr": {
-    "version": "128.5.1esr",
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.5.1esr/mac/sco/Firefox%20128.5.1esr.dmg",
-    "sha256": "41750c25a3189fe458f2415d91d894afc6382c913402af19b1317ab9d1aca318"
+    "version": "128.5.2esr",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.5.2esr/mac/sco/Firefox%20128.5.2esr.dmg",
+    "sha256": "c3516bfad50caefee6b84f0949e63cd51f231c4fc371f8f6d6551cb41f74eaba"
   },
   "firefox-nightly": {
     "version": "135.0a1",
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2024/12/2024-12-11-21-53-22-mozilla-central-l10n/firefox-135.0a1.sco.mac.dmg",
-    "sha256": ""
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2024/12/2024-12-12-21-24-33-mozilla-central-l10n/firefox-135.0a1.sco.mac.dmg",
+    "sha256": "1bf1c5882f22b78cc738e9a2f4630e11027dcc586ba64b24a686243ff96b6245"
   },
   "librewolf-arm64": {
     "version": "133.0-3",
