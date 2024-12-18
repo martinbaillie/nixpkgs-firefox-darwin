@@ -5,14 +5,14 @@
     "sha256": "57d06728ba2ab573cebb70a713150d67016f1f96c0bcd9508a3d34ac2e1a0120"
   },
   "firefox-beta": {
-    "version": "134.0b9",
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/134.0b9/mac/sco/Firefox%20134.0b9.dmg",
-    "sha256": "2dbd478e97d7b6d7e87558edb4e9d284a3f5ff91bb5ee032f73528bd26d0b24a"
+    "version": "134.0b10",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/134.0b10/mac/sco/Firefox%20134.0b10.dmg",
+    "sha256": "b672abf614abbcef1f2d6cb65fe8f2c9424a2b2b8a99d434b6bf14c59d2e324c"
   },
   "firefox-devedition": {
-    "version": "134.0b9",
-    "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/134.0b9/mac/sco/Firefox%20134.0b9.dmg",
-    "sha256": "0fb8d1d45e0d26a4ab5fdcdae81dedc7d8f95b02ecec89a4ed5b5c4427b012e2"
+    "version": "134.0b10",
+    "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/134.0b10/mac/sco/Firefox%20134.0b10.dmg",
+    "sha256": "f3a4a3d81ce784a19c466e3ded87752cf44611b1699fdaba04682dd7283f7c94"
   },
   "firefox-esr": {
     "version": "128.5.2esr",
@@ -21,8 +21,8 @@
   },
   "firefox-nightly": {
     "version": "135.0a1",
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2024/12/2024-12-16-21-41-13-mozilla-central-l10n/firefox-135.0a1.sco.mac.dmg",
-    "sha256": ""
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2024/12/2024-12-17-05-09-10-mozilla-central-l10n/firefox-135.0a1.sco.mac.dmg",
+    "sha256": "b7553bc8969639be360e02f81ad463622eff4f00db4cd5690d660442d83b2b15"
   },
   "librewolf-arm64": {
     "version": "133.0.3-1",
