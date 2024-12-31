@@ -22,7 +22,7 @@
   "firefox-nightly": {
     "version": "135.0a1",
     "url": "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2024/12/2024-12-30-20-52-00-mozilla-central-l10n/firefox-135.0a1.sco.mac.dmg",
-    "sha256": ""
+    "sha256": "1aa3d846f1f48da4c73d4f7f69286c02ec952f37843f59f65709a545513b7a8b"
   },
   "librewolf-arm64": {
     "version": "133.0.3-1",
