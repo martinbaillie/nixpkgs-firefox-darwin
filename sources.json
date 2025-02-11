@@ -22,7 +22,7 @@
   "firefox-nightly": {
     "version": "137.0a1",
     "url": "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2025/02/2025-02-10-21-39-27-mozilla-central-l10n/firefox-137.0a1.sco.mac.dmg",
-    "sha256": ""
+    "sha256": "0962ac02826ddab7c4eae402d0aac615f54344abf63f7f75b3176566efbaae87"
   },
   "librewolf-arm64": {
     "version": "135.0-1",
