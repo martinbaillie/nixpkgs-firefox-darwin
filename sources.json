@@ -1,8 +1,8 @@
 {
   "firefox": {
-    "version": "137.0",
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/137.0/mac/sco/Firefox%20137.0.dmg",
-    "sha256": "f9aa942a0e72fd893fd4c02f4eefcbd252b8bb33605317bc6cfa418b1b16af8f"
+    "version": "137.0.1",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/137.0.1/mac/sco/Firefox%20137.0.1.dmg",
+    "sha256": "7281c94392a854194d075371270d21ca96be8692fff8d9a9f62c6bf340fc8c78"
   },
   "firefox-beta": {
     "version": "138.0b4",
@@ -21,8 +21,8 @@
   },
   "firefox-nightly": {
     "version": "139.0a1",
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2025/04/2025-04-07-21-29-17-mozilla-central-l10n/firefox-139.0a1.sco.mac.dmg",
-    "sha256": "dca9cabb282f42cb8f10d31a5e3b6a19cb977c9df6ba8d79e9b75f714c5d4604"
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2025/04/2025-04-08-21-22-25-mozilla-central-l10n/firefox-139.0a1.sco.mac.dmg",
+    "sha256": "73ef67ea3a1dac6a06f6edca7790def2e2d9c0e7da8e178b44338d8835013937"
   },
   "librewolf-arm64": {
     "version": "137.0-3",
